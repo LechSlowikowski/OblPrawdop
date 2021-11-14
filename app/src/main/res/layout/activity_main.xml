@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Obliczanie kombinacji"
+        android:textSize="32sp"
+        android:background="#008080"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liczba kul:" />
+    <EditText
+        android:id="@+id/liczbaKul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Z ilu liczb losujemy"
+        android:imeOptions="actionNext"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liczba losowanych:" />
+    <EditText
+        android:id="@+id/liczbaLosowanych"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ie liczb losujemy"
+        android:imeOptions="actionDone"
+        android:inputType="number" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oblicz"
+        android:backgroundTint="#C2C2C2"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:onClick="oblicz"/>
+    <TextView
+        android:id="@+id/komunikat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Autor 34567890123" />
+
+</LinearLayout>
